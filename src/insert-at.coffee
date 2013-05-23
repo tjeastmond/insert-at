@@ -4,6 +4,7 @@
 
 isNode = typeof module isnt 'undefined'
 
+# purely for testing
 _ = require 'underscore' if isNode is true
 
 insertAt = (array, item, at) ->
@@ -12,7 +13,7 @@ insertAt = (array, item, at) ->
 	array.splice at, 0, item
 	array
 
-_.mixin insertAt: insertAt
+_.mixin insertAt: insertAt if typeof _ isnt 'undefined'
 
 if isNode is true
 	exports = module.exports = insertAt
