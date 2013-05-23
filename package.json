@@ -1,0 +1,25 @@
+{
+  "name": "insert-at",
+  "version": "0.1.0",
+  "description": "Simple Underscore.js mixin for insert elements into an array at specific points",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "",
+  "keywords": [
+    "underscore",
+    "arrays",
+    "insert",
+    "mixin"
+  ],
+  "author": "TJ Eastmond",
+  "license": "MIT",
+  "devDependencies": {
+    "underscore": "*",
+    "mocha": "*",
+    "should": "*",
+    "coffee-script": "*",
+    "uglify-js": "*"
+  }
+}
