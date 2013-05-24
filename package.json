@@ -6,14 +6,19 @@
   "scripts": {
     "test": "make test"
   },
-  "repository": "",
+  "repository": "git://github.com/tjeastmond/insert-at.git",
   "keywords": [
     "underscore",
+    "array",
     "arrays",
     "insert",
     "mixin"
   ],
-  "author": "TJ Eastmond",
+  "author": {
+    "name": "TJ Eastmond",
+    "email": "tj@swoo.io",
+    "url": "http://tjeastmond.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "underscore": "*",
