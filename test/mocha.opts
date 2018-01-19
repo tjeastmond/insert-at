@@ -1,3 +1,2 @@
---compilers coffee:coffee-script
+--require babel-core/register
 --reporter spec
---require should
