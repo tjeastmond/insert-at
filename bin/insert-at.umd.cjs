@@ -1,0 +1,1 @@
+(function(e,n){typeof exports=="object"&&typeof module<"u"?module.exports=n():typeof define=="function"&&define.amd?define(n):(e=typeof globalThis<"u"?globalThis:e||self,e.insertAt=n())})(this,function(){"use strict";function e(n,o,i){let t=[...n],f=i;return i>=t.length&&(f=t.length),i<0&&(f=0),t.splice(f,0,o),t}return e});

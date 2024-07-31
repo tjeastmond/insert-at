@@ -1,32 +1,28 @@
-# InsertAt - A simple mixin
+# InsertAt - A Simple Mixin
 
-InsertAt is a very simple functional method for adding items at a specific point in an array. This was something I threw together for some of my work on SPIN.com and thought I'd share it.
+`InsertAt` is a very simple functional method for adding items at a specific point in a copy of the orignal array.
 
-## Using
+**I DON'T THINK YOU NEED A LIB JUST FOR THIS. IT WAS SOME OLD CODE I WROTE, AND SOME PEOPLE ARE USING IT STILL.**
 
-The function is easy enough to use.
+## How to Use
 
-```js
-let a = ['figs', 'ash', 'oreo'];
-let a2 = insertAt(a, 'mooch', 2);
-console.log(a2); // ['figs', 'ash', 'mooch', 'oreo']
-```
+To use the `InsertAt` mixin:
 
-## A Few Points
+1. Import the function into your project.
 
-- If you try to insert at a position larger than the array, the item will be added to the end of the array
-- The method will always return an array, even if you pass in an object literal
+    ```javascript
+    import insertAt from 'insert-at';
+    ```
 
-## Testing
+2. Call the `insertAt` function with your array, the index at which to insert, and the item you wish to add. It will return a new array with the item inserted at the specified position.
 
-To run tests, make sure you run
+    ```javascript
+    const originalArray = [1, 2, 3, 4];
+    const newItem = 'a';
+    const indexToInsert = 2;
 
-```
-  npm install
-```
+    const newArray = insertAt(originalArray, indexToInsert, newItem);
+    // newArray should be [1, 2, 'a', 3, 4]
+    ```
 
-from within the directory to install development dependencies. Then run the following:
-
-```
-  npm test
-```
+You now have a new array with the item inserted at your specified index.

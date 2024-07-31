@@ -1,26 +1,34 @@
 {
   "name": "insert-at",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Simple functional methond for adding items to an Array",
-  "main": "dist/insert-at.js",
   "repository": "git://github.com/tjeastmond/insert-at.git",
+  "license": "MIT",
+  "type": "module",
+  "main": "bin/insert-at.js",
+  "author": {
+    "name": "TJ Eastmond",
+    "email": "tj.eastmond@gmail.com",
+    "url": "https://tjeastmond.com"
+  },
   "keywords": [
     "array",
     "arrays",
     "insert"
   ],
-  "author": "TJ Eastmond <tj.eastmond@gmail.com> (http://tjeastmond.com)",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "chai": "^4.1.2",
-    "mocha": "^5.0.0"
-  },
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "test": "mocha ./test"
+    "build": "tsc && vite build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "ts-jest"
+    }
   }
 }
